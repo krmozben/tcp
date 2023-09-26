@@ -28,11 +28,11 @@ class Program
     {
         while (true)
         {
-                byte[] responseData = new byte[1024];
-                int bytesRead = stream.Read(responseData, 0, responseData.Length);
-                string responseMessage = Encoding.ASCII.GetString(responseData, 0, bytesRead);
-                Console.WriteLine($"Alınan yanıt: {responseMessage}");
-         
+            byte[] responseData = new byte[1024];
+            int bytesRead = stream.Read(responseData, 0, responseData.Length);
+            string responseMessage = Encoding.ASCII.GetString(responseData, 0, bytesRead);
+            Console.WriteLine($"Alınan yanıt: {responseMessage}");
+
         }
     }
 }
