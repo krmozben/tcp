@@ -1,11 +1,9 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
 class Program
 {
-    static string text;
     static void Main()
     {
         string serverIP = "127.0.0.1";
