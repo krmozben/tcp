@@ -8,7 +8,6 @@ class Program
     static string text;
     static void Main()
     {
-        // Sunucunun IP adresi ve port numarası
         string serverIP = "127.0.0.1";
         int serverPort = 12345;
 
@@ -33,11 +32,5 @@ class Program
             byte[] responseData = Encoding.ASCII.GetBytes(responseMessage);
             stream.Write(responseData, 0, responseData.Length);
         }
-
-        stream.Close();
-        client.Close();
-        server.Stop();
-
-        Console.Read();
     }
 }
